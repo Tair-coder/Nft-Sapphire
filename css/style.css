@@ -1,0 +1,629 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: border-box;
+    color: var(--color-primary);
+    font-family: var(--font-family-1);
+
+}
+
+:root {
+    --font-family-1: "Space Grotesk", sans-serif;
+    --font-familyPoppins:'Poppins', sans-serif;
+    --font-medium: medium;
+    --font-family-mono:font-family: 'DM Mono', monospace;;
+    --font-bold:700;
+    --color-primary: #e5e5e5;
+
+}
+
+body {
+    max-width: 1440px;
+    background-color: #1c233d;
+}
+
+.link {
+    text-decoration: none;
+    color: #e5e5e5;
+    background: linear-gradient(85.76deg,
+            rgba(191, 196, 238, 0.0945738) -105.02%,
+            #c367e6 10.94%,
+            rgba(190, 206, 239, 0) 121.57%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: var(--font-bold);
+}
+
+.title {
+    font-weight: var(--font-medium);
+    color: var(--color-primary);
+}
+.bigsize__overtitle{
+    font-size: 18px;
+    background: linear-gradient(
+180deg, #9C76B8 0%, rgba(156, 118, 184, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: DM Mono;
+}
+.bigsize__title{
+    font-size: 36px;
+}
+
+.list__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: var(--font-family-1);
+}
+
+.list__wrap li {
+    list-style: none;
+}
+
+header {
+    font-family: var(--font-family-1);
+    max-width: 877px;
+    margin: 15px auto 0 auto;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 25px;
+}
+
+.header__list {
+    margin-left: 38px;
+}
+
+.btn__a {
+    text-decoration: none;
+    color: var(--color-primary);
+    
+}
+
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 242px;
+    height: 30px;
+    border: none;
+    background: none;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline: none;
+    color: var(--color-primary);
+    position: relative;
+}
+
+.search::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    /* left: 91.15%; */
+    right: 11px;
+    /* top: 30%; */
+    width: 8px;
+    height: 8px;
+    /* bottom: 40.37%; */
+    top: 9px;
+    border: 3px solid rgba(229, 229, 229, 1);
+    border-radius: 47%;
+    cursor: pointer;
+}
+
+
+.search::after {
+    content: "";
+    display: flex;
+    width: 9px;
+    height: 2px;
+    position: absolute;
+    background: rgba(229, 229, 229, 1);
+    transform: rotate(30deg);
+    right: 4px;
+    top: 20px;
+    cursor: pointer;
+}
+.search input::placeholder {
+    color: var(--color-primary);
+}
+
+.header__btn {
+    padding: 8px 31px 9px 29px;
+}
+
+/*               banner          */
+.banner{
+    max-width: 895px;
+    margin: 77px auto 124px auto; 
+    display: flex;
+    justify-content: space-between;
+}
+.banner__sideText{
+    width: 402px;
+    height: 476px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 12px;
+}
+.banner__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 77px;
+    max-width: 400px;
+    max-height: 231px;
+    font-family: var(--font-family-1);
+}
+.banner__almostCircle{
+    position: absolute;
+    right: 5px;
+    top: 33%;
+}
+.banner__undertitle{
+    font-family: var(--font-familyPoppins);
+    font-weight: var(--font-medium);
+    font-size: 13px;
+    width: 300px;
+    margin-top: 13px;
+}
+.banner__btn{
+    outline: none;
+    background: none;
+    border: none;
+    margin-top: 23px;
+    
+}
+.banner__link{
+    padding: 10px 48px 10px 44px;
+    font-size: 16px;
+}
+
+.banner__list{
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+}
+.banner__list li{
+    font-weight: 700
+}
+.banner__list li h2{
+    font-size: 36px;
+}
+.banner__list li p{
+    font-size: 12px;
+
+}
+.nftProduct{
+    background: rgba(48, 56, 77, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.banner__nft{
+    height: 463px;
+    width: 404px;
+    border-radius: 10px;
+    padding-top: 30px;
+    position: relative;
+}
+.nftProduct__span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner__undernftSpan{
+    width: 355px;
+    margin-top: 7px;
+    padding-top: 3px;
+}
+.banner_underNftText{
+    font-size: 16px;
+    margin-left: 6px;
+}
+.banner__priceList{
+    max-width: 364px;
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+}
+.nftProduct__priceList li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    color: #545C71;
+    font-weight: var(--font-medium);
+}
+.nftProduct__priceList li span{
+    font-size: 10px;
+    color: var(--color-primary);
+    margin-top: 4px;
+}
+/*                                                     partners         */
+.partners{
+    display: flex;
+    max-width: 685px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 268px  61px  auto ;
+}
+
+
+/*                                        drops             */
+
+.drops{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+
+}
+.drops__titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overtitle{
+    background: linear-gradient(180deg, #9C76B8 0%, rgba(156, 118, 184, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: DM Mono;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.drops__list{
+    font-family:var(--font-family-mono) ;
+    max-width: 872px;
+    width: 100%;
+    margin-top: 19px;
+}
+.drops__list .drops__item{
+    padding: 10px 23px;
+    background: rgba(48, 56, 77, 1);
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.drops__item:hover{
+    background: rgba(68, 42, 61, 1);
+    transition: all 0.7s;
+}
+.drops__item.active{
+    background: rgba(61, 42, 61, 1);
+
+}
+.drops__products{
+    margin-top: 51px;
+
+}
+.drops__productsArt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 58px 28px;
+    height: 704px;
+    position: relative;
+}
+.art__drops{
+    height: 309px;
+    width: 281px;
+    border-radius: 5px;
+    position: relative;
+    padding-top: 15px;
+}
+.drops__productsArt__img{
+    margin-right: 10px;
+}
+.drops__productsArt__span{
+    width: 217px;
+    margin-top: 19px;
+    margin-right: 6px;
+}
+.drops__productsArt__span__span{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.drops__productsArt__text{
+    font-size: 10px;
+    font-weight: 700;
+}
+.drops__productsArt__undertitle{
+    font-size: 10px;
+    font-weight: 400;
+    
+}
+.drops__productsArt__priceList{
+    width: 226px;
+    position: absolute;
+    bottom: 7px;
+    right: 27px;
+}
+.drops__products__others{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 265px;
+}
+.drops__productsArt__btn{
+    height: 33px;
+    width: 141px;
+    border-radius: 5px;
+    background: rgba(48, 56, 77, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: auto;
+    position: absolute;
+    bottom: -103px;
+    right: 41.4%;
+}
+.drops__productsArt__btn:hover{
+    background: rgba(61, 42, 61, 1);
+    transition: all 0.7s;
+}
+.createAndSell{
+    margin-top: 197px;
+    height: 506px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.createAndSell__titles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.createAndSell__titles h3{
+    margin-bottom: 29px;
+
+}
+.createAndSell__cards{
+    margin-top: 54px;
+    width: 898px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createAndSell__card{
+    flex-direction: column;
+    height: 259px;
+    width: 287px;
+    border-radius: 5px;
+    background: rgba(48, 56, 77, 1);
+    justify-content: center;
+}
+.createAndSell__h3{
+    font-family: var(--font-family-mono);
+    font-size: medium;
+    margin: 17px 0 14px 0;
+}
+.createAndSell__p{
+    font-size: 10px;
+    text-align: center;
+    max-width: 165px;
+}
+.createAndSell__btns{
+    margin-top: 55px;
+    width: 294px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.createAndSell__btn{
+    border: none;
+    outline: none;
+    border: none;
+    padding: 8px 0 12px 0;
+    background: linear-gradient(85.76deg, rgba(191, 196, 238, 0.0945738) -105.02%, #C367E6 10.94%, rgba(190, 206, 239, 0) 121.57%);
+    height: 39px;
+    width: 142px;
+    border-radius: 5px;
+}
+.createAndSell__link{
+    background: none;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.creators{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.creators__titles h3{
+    margin-bottom: 18px;
+}
+.creators__creators{
+    width: 896px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px 12px;
+    margin-top: 42px;
+}
+.creators__creator{
+    height: 63px;
+    width: 272px;
+    border-radius: 5px;
+    background: rgba(48, 56, 77, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 9px 0 15px;
+}
+.creator__inf{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
+.creator__h4{
+    font-family: DM Mono;
+    font-size: 8px;
+    font-weight: 500;
+    
+}
+.creator__h5{
+    font-family: DM Mono;
+    font-size: 8px;
+    font-weight: 500;
+}
+.creators__btn{
+    margin-top: 44px;
+    height: 39px;
+    width: 142px;
+    border-radius: 5px;
+    
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 1)
+}
+.creators__btn a {
+    background: none;
+
+}
+
+.join__community{
+    height: 261px;
+    width: 904px;
+    border-radius: 5px;
+    background:#1E2B4B;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:53px auto 165px auto;
+
+}
+.join__community__title{
+    font-size: 23px;
+}
+.join__community__text{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0 30px;
+}
+.join__community__btn{
+    background: none;
+    border: 1px solid #fff;
+    border-radius:5px ;
+    padding: 10px 25px;
+    background: linear-gradient(85.76deg, rgba(191, 196, 238, 0.0945738) -105.02%, #C367E6 10.94%, rgba(190, 206, 239, 0) 121.57%);
+    
+}
+.join__community__btn a {
+    font-size: 15px;
+    font-weight: 700;
+    background: none;
+}
+footer{
+    height: 302px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto;
+}
+.footer{
+    display: flex;
+    width: 960px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer__title{
+    font-size: 40px;
+    /* margin-right: 71px; */
+}
+.footer__textbox{
+    display: flex;
+    flex-direction: column;
+    height: 158px;
+    /* margin-left: 32px; */
+    max-width: 381px;
+    margin-right: 75px;
+    justify-content: space-between;
+}
+.footer__text {
+    margin-bottom: 14px;
+}
+.footer__socialNetworks{
+    display: flex;
+    width:173px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__lists{
+    display: flex;
+    width: 435px;
+    height: 134px;
+    /* margin-top: 12px; */
+    /* margin-left: 53px; */
+    justify-content: space-around;
+}
+.footer__lists .list__vertical{
+    flex-direction: column;
+    font-size: 16px;
+}
+.list__vertical a {
+    text-decoration: none;
+}
+.footer__list__one{
+    align-items: flex-start;
+}
+.footer__list__titleWord{
+    font-size: 20px;
+}
+.privacy{
+    width: 100%;
+    display: flex;
+    margin-top: 36px;
+    justify-content: space-between;
+} 
+.privacy span{
+    width: 255px;
+    display: flex;
+    justify-content: space-between;
+}
+.privacy2022{
+    margin-left: 65px;
+}
+.privacy2022,.privacy span a {
+    color: #545C71;
+    text-decoration: none;
+    font-size: 14px;
+} 
+.privacy2022:hover,.privacy span a:hover{
+    text-decoration: underline;
+    
+}
+.privacy__span{
+    margin-right: 65px;
+}
